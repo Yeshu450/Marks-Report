@@ -1,0 +1,87 @@
+/* defining styles for tip calc  */
+
+body{
+    background-color: #000;
+    font-family: 'Arial Rounded MT';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#main{
+    color: #fff;
+    background-color: #111;
+    width: 450px;
+    height: 550px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 8px #222;
+    transition: all 600ms linear;
+    box-sizing: content-box;
+}
+
+#main h1{
+    margin: 5px;
+    text-align: center;
+    text-decoration: 3px double red underline ;
+}
+
+#main p {
+    display: flex;
+    align-items:center;
+}
+
+#main p input{
+    width: 250px;
+    padding: 2px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#main p label {
+    width: 100px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+#main button{
+    width: 120px;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#btn{
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#main [type="button"]{
+    background-color: #0000ff;
+}
+
+#main [type="reset"]{
+    background-color: #ff0000;
+}
+
+output{
+    color:#ffff00;
+}
+
+#main:hover{
+    transform: scale(1.005);
+    box-shadow: 0 0 10px cyan;
+}

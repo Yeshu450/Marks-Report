@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Report</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="main">
+        <form>
+            <h1>Marks Report</h1>
+            <p>
+                <label for="rno"> Roll No : </label>
+                <input type="text" id="rno" autofocus required autocomplete="off">
+            </p>
+            <p>
+                <label for="sna"> Name : </label>
+                <input type="text" id="sna" required autocomplete="off">
+            </p>
+            <h2>Marks : </h2>
+            <p>
+                <label for="htm"> HTML : </label>
+                <input type="number" id="htm" min="0" max="100" required>
+            </p>
+            <p>
+                <label for="cs"> CSS : </label>
+                <input type="number" id="cs" min="0" max="100" required>
+            </p>
+            <p>
+                <label for="js"> JavaScript : </label>
+                <input type="number" id="js" min="0" max="100" required>
+            </p>
+            <p>
+                <label for="bs"> BootStrap : </label>
+                <input type="number" id="bs" min="0" max="100" required>
+            </p>
+            <p align="center" id="btn">
+                <button type="button" onclick="getResult()">Get Result</button>
+                &nbsp; &nbsp;
+                <button type="reset" onclick="clearFields()">Clear All</button>
+            </p>
+            <p>
+                <output id="tot">Total Marks : </output>
+            </p>
+            <p>
+                <output id="avg">Average : </output>
+            </p>
+            <p>
+                <output id="grd">Grade : </output>
+            </p>
+            <p>
+                <output id="bl">Backlogs : </output>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
